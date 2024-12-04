@@ -41,6 +41,8 @@ android {
 
 dependencies {
 
+    // lottie
+    implementation(libs.lottie)
 
     // navigation
     implementation(libs.androidx.navigation.compose)

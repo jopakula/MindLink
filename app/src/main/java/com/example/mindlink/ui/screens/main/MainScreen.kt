@@ -1,4 +1,4 @@
-package com.example.mindlink.ui.screens
+package com.example.mindlink.ui.screens.main
 
 import android.widget.Toast
 import androidx.compose.foundation.background

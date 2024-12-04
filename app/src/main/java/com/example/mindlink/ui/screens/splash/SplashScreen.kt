@@ -1,4 +1,4 @@
-package com.example.mindlink.ui.screens
+package com.example.mindlink.ui.screens.splash
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

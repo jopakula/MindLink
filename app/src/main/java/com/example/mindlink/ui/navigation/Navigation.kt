@@ -5,8 +5,8 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.example.mindlink.ui.screens.MainScreen
-import com.example.mindlink.ui.screens.SplashScreen
+import com.example.mindlink.ui.screens.main.MainScreen
+import com.example.mindlink.ui.screens.splash.SplashScreen
 
 @Composable
 fun Navigation(
@@ -19,7 +19,7 @@ fun Navigation(
         startDestination = startDestination,
         modifier = modifier
     ) {
-        composable(Screens.Splash.screen) { SplashScreen(navigationController = navigationController)}
+        composable(Screens.Splash.screen) { SplashScreen(navigationController = navigationController) }
         composable(Screens.Main.screen) { MainScreen(navigationController = navigationController) }
 
     }
