@@ -15,6 +15,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.example.mindlink.ui.navigation.Screens
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 @Composable
 fun MainScreen(
@@ -39,6 +44,12 @@ val context = LocalContext.current
             Button(
                 onClick = {
                     Toast.makeText(context, "Clicked", Toast.LENGTH_SHORT).show()
+                    CoroutineScope(Dispatchers.Main).launch{
+                        delay(1000)
+                        navigationController.navigate(Screens.Lesson1.screen)
+                    }
+
+
                 }
             ) {
                 Text(text = "Lesson # 1")

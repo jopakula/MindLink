@@ -6,4 +6,5 @@ sealed class Screens(
 
     data object Main: Screens("main")
     data object Splash: Screens("splash")
+    data object Lesson1: Screens("lesson1")
 }
